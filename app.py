@@ -31,4 +31,6 @@ def predict(
 
     prediction = model.predict(features)[0]
 
-    return {"predicted_quality": prediction}
+    return { "name": "keerthi",
+    "roll_no": "2022bcs0181",
+    "wine_quality": int(prediction)}
