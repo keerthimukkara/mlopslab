@@ -34,3 +34,6 @@ joblib.dump(model, "output/model.pkl")
 # Save results
 with open("output/results.json", "w") as f:
     json.dump({"MSE": mse, "R2": r2}, f, indent=4)
+    
+import shutil
+shutil.copy("output/model.pkl", "model.pkl")

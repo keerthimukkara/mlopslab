@@ -1,6 +1,9 @@
 from fastapi import FastAPI
 import joblib
 import numpy as np
+import joblib
+
+model = joblib.load("model.pkl")
 
 app = FastAPI()
 
